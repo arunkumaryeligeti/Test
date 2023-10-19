@@ -1,1 +1,1257 @@
-Test
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css"
+        integrity="sha512-P9pgMgcSNlLb4Z2WAB2sH5KBKGnBfyJnq+bhcfLCFusrRc4XdXrhfDluBl/usq75NF5gTDIMcwI1GaG5gju+Mw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: monospace;
+            color: white;
+        }
+
+        .pageBackground {
+            background: #003366;
+        }
+
+        .col-header {
+            height: 50px;
+            display: inline-flex;
+        }
+
+        .col-header-box {
+            width: 145px;
+            border: solid #004d9b 1px;
+            background-color: #004081;
+            display: inline-flex;
+            box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        .col-header-box:first-child {
+            border-radius: 10px 0px 0px 0px;
+            box-shadow: none;
+        }
+
+        .col-header-box:last-child {
+            border-radius: 0px 10px 0px 0px;
+        }
+
+        .col-header-box:nth-child(9) {
+            border-radius: 0px 10px 0px 0px;
+        }
+
+        .chb-l {
+            width: 55px;
+            text-align: center;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 2px;
+        }
+
+        .chb-m {
+            width: 31px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .chb-r {
+            width: 55px;
+            text-align: center;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 2px;
+        }
+
+        .chb-m>span {
+            background-color: #003367;
+            border-radius: 3px;
+            padding: 3px 7px 5px 6px;
+        }
+
+        .rows {
+            margin-top: -4px;
+        }
+
+        .single-row {
+            display: inline-flex;
+        }
+
+        .single-row:nth-of-type(even) {
+            background-color: #002e5c;
+        }
+
+        .single-row>div {
+            width: 145px;
+        }
+
+        .row-box {
+            width: 145px;
+            border: solid #004d9b 1px;
+            text-align: left;
+            padding: 30px 0px 30px 0px;
+            border-width: 0px 1px 0px 1px;
+        }
+
+        .row-box:nth-child(1) {
+            box-shadow: 4px 0px 3px rgba(0, 0, 0, 0.3);
+            padding-top: 60px;
+            padding-left: 0px;
+            background-color: #004081;
+            text-align: center;
+            color: #8ce5e3;
+            font-size: 14px;
+        }
+
+        .single-row:last-child {
+            border-bottom: solid #004d9b 1px;
+        }
+
+        .inr-div {
+            margin-left: 10px;
+        }
+
+        .svg-inline--fa {
+            height: 15px;
+        }
+
+        .txt-light-blue {
+            color: #8ce5e3;
+        }
+
+        .next-btn {
+            background-color: #00000042;
+            height: 767px;
+            width: 50px;
+            position: absolute;
+            top: 85px;
+            right: 14px;
+            border-radius: 0px 10px 0px 0px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .fa-arrow-right {
+            height: 25px;
+        }
+
+        .slider {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 8px;
+            width: 8px;
+            margin: 0 2px;
+            background-color: #00a8a4;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body class="pageBackground">
+    <div style="margin: 20px 0px 0px 60px;">
+        <div style="font-size: 25px;">Philadelphia Schedule 2022 - 2023</div>
+        <div class="txt-light-blue"> Draft block schedule for 2022 - 2023</div>
+    </div>
+    <div class="" style="margin: 20px 5px 0px 5px; font-size: 12px;overflow-x: hidden;">
+        <div class="col-header">
+            <div class="col-header-box"></div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 6</b> <span class="txt-light-blue">2022</span>
+                </div>
+                <div class="chb-m">
+                    <span> 1 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jul 1</b> <span class="txt-light-blue">2022</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jul 4</b> <span class="txt-light-blue">2022</span>
+                </div>
+                <div class="chb-m">
+                    <span> 2 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jul 29</b> <span class="txt-light-blue">2022</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Aug 1</b> <span class="txt-light-blue">2022</span>
+                </div>
+                <div class="chb-m">
+                    <span> 3 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Aug 26</b> <span class="txt-light-blue">2022</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Aug 29</b> <span class="txt-light-blue">2022</span>
+                </div>
+                <div class="chb-m">
+                    <span> 4 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Sep 23</b> <span class="txt-light-blue">2022</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Sep 26</b> <span class="txt-light-blue">2022</span>
+                </div>
+                <div class="chb-m">
+                    <span> 5 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Oct 21</b> <span class="txt-light-blue">2022</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Oct 24</b> <span class="txt-light-blue">2022</span>
+                </div>
+                <div class="chb-m">
+                    <span> 6 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Nov 18</b> <span class="txt-light-blue">2022</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Nov 21</b> <span class="txt-light-blue">2022</span>
+                </div>
+                <div class="chb-m">
+                    <span> 7 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Dec 16</b> <span class="txt-light-blue">2022</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 2</b> <span class="txt-light-blue">2023</span>
+                </div>
+                <div class="chb-m">
+                    <span> 8 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jan 27</b> <span class="txt-light-blue">2023</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 2</b> <span class="txt-light-blue">2023</span>
+                </div>
+                <div class="chb-m">
+                    <span> 2 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jan 27</b> <span class="txt-light-blue">2023</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 2</b> <span class="txt-light-blue">2023</span>
+                </div>
+                <div class="chb-m">
+                    <span> 2 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jan 27</b> <span class="txt-light-blue">2023</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 2</b> <span class="txt-light-blue">2023</span>
+                </div>
+                <div class="chb-m">
+                    <span> 2 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jan 27</b> <span class="txt-light-blue">2023</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 2</b> <span class="txt-light-blue">2023</span>
+                </div>
+                <div class="chb-m">
+                    <span> 2 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jan 27</b> <span class="txt-light-blue">2023</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 2</b> <span class="txt-light-blue">2023</span>
+                </div>
+                <div class="chb-m">
+                    <span> 2 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jan 27</b> <span class="txt-light-blue">2023</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 2</b> <span class="txt-light-blue">2023</span>
+                </div>
+                <div class="chb-m">
+                    <span> 2 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jan 27</b> <span class="txt-light-blue">2023</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 2</b> <span class="txt-light-blue">2023</span>
+                </div>
+                <div class="chb-m">
+                    <span> 2 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jan 27</b> <span class="txt-light-blue">2023</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 2</b> <span class="txt-light-blue">2023</span>
+                </div>
+                <div class="chb-m">
+                    <span> 2 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jan 27</b> <span class="txt-light-blue">2023</span>
+                </div>
+            </div>
+            <div class="col-header-box">
+                <div class="chb-l">
+                    <b>Jan 2</b> <span class="txt-light-blue">2023</span>
+                </div>
+                <div class="chb-m">
+                    <span> 2 </span>
+                </div>
+                <div class="chb-r">
+                    <b>Jan 27</b> <span class="txt-light-blue">2023</span>
+                </div>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="single-row">
+                <div class="row-box">Adeniji, Yuah</div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <br /> Elective <br /> JUN B-JULT <br />
+                        <span class="txt-light-blue"> Podiatric Hospital in..</span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        Family Medicine <br /> JUL-JUL 20 <br />
+                        <span class="txt-light-blue">
+                            Washington County
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class='fas fa-chalkboard-teacher'></i>
+                        <br />
+                        Psychiatry <br /> AUG 1-AUG
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i><br />
+                        General Internal <br /> AUG 29-AUG 23 <br />
+                        <span class="txt-light-blue">
+                            Podiatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i> <br />
+                        Surgery Subspeci <br /> SEP 20-OCT 21 <br />
+                        <span class="txt-light-blue">
+                            McWilliam Hoopitol
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box"> <br />
+                    <div class="inr-div">
+                        Family Medicine <br /> OCT 24-NOV 18 <br />
+                        <span class="txt-light-blue">
+                            Washington County
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Surgery Subspeci <br /> NOV 21-DEC 1 <br />
+                        <span class="txt-light-blue">
+                            McWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <div style="text-align:left; ">
+                            <i class='fas fa-chalkboard-teacher'></i>
+                        </div>
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            MoWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <div style="text-align:left; ">
+                            <i class='fas fa-chalkboard-teacher'></i>
+                        </div>
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            MoWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <div style="text-align:left; ">
+                            <i class='fas fa-chalkboard-teacher'></i>
+                        </div>
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            MoWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <div style="text-align:left; ">
+                            <i class='fas fa-chalkboard-teacher'></i>
+                        </div>
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            MoWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <div style="text-align:left; ">
+                            <i class='fas fa-chalkboard-teacher'></i>
+                        </div>
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            MoWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <div style="text-align:left; ">
+                            <i class='fas fa-chalkboard-teacher'></i>
+                        </div>
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            MoWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <div style="text-align:left; ">
+                            <i class='fas fa-chalkboard-teacher'></i>
+                        </div>
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            MoWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <div style="text-align:left; ">
+                            <i class='fas fa-chalkboard-teacher'></i>
+                        </div>
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            MoWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <div style="text-align:left; ">
+                            <i class='fas fa-chalkboard-teacher'></i>
+                        </div>
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            MoWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <div style="text-align:left; ">
+                            <i class='fas fa-chalkboard-teacher'></i>
+                        </div>
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            MoWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="single-row">
+                <div class="row-box">Adewolu, Tosin</div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Elective McWilliam Hospital..
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        Family Medicine <br /> JUL 4-JUL 20 <br />
+                        <span class="txt-light-blue">
+                            Washington County
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i><br />
+                        Psychiatry <br /> AUG 1-AUG D
+                    </div>
+                    <div class="slider">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <i class="fa fa-medkit"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        General Internal.. <br /> AUG 20-SEP 23 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <br /> Family Medicine <br /> SEP 26-OCT 21 <br />
+                        <span class="txt-light-blue">
+                            Washington County.
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        Family Medicine <br /> SEP 28-OCT-21 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinio No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <br /> Surgery Subspeci <br /> NOV 21-DEC 18 <br />
+                        <span class="txt-light-blue">
+                            McWilliam Hospita
+                        </span>
+                    </div>
+
+                    <div class="slider">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        IM/Cardiology <br /> JANZ-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        IM/Cardiology <br /> JANZ-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        IM/Cardiology <br /> JANZ-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        IM/Cardiology <br /> JANZ-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        IM/Cardiology <br /> JANZ-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        IM/Cardiology <br /> JANZ-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        IM/Cardiology <br /> JANZ-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        IM/Cardiology <br /> JANZ-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        IM/Cardiology <br /> JANZ-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        IM/Cardiology <br /> JANZ-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="single-row">
+                <div class="row-box">Adewolu, Tosin</div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        Elective <br /> JUN JUL 1
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fas fa-chalkboard-teacher'></i>
+                        <br />
+                        Family Medicine <br /> JUL 4-JUL 29 <br />
+                        <span class="txt-light-blue">
+                            Washington County
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Psychiatry <br /> AUG 1-AUG S
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        General Internal <br /> AUG 29-AUD 23
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-calendar"></i>
+                        <br />
+                        Surgery Subspeci <br /> SEP 26-001 21 <br />
+                        <span class="txt-light-blue">
+                            Adewolu. Tosin Elective <br /> JUN JUL 1
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <br />
+                        Family Medicine <br /> OCT 24-NOV 18 <br />
+                        <span class="txt-light-blue">
+                            Washington County
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <br />Surgery Subspeci <br /> NOV-DEC McWilliam Hospita
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 2-JAN 27
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 2-JAN 27
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 2-JAN 27
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 2-JAN 27
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 2-JAN 27
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 2-JAN 27
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 2-JAN 27
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 2-JAN 27
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 2-JAN 27
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 2-JAN 27
+                    </div>
+                </div>
+            </div>
+            <div class="single-row">
+                <div class="row-box">Adewolu, Tosin</div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Elective <br /> JUN B-JUL 1 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Family Medicine
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Psychiatry AUG Washington County
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <br /> General Internal <br /> AUG-29-SEP 23 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-calendar"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Family Medicine SEF <br /> 28-OCT 21 <br />
+                        <span class="txt-light-blue">
+                            Washington County.
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Family Medicine <br /> SEP 20-OCT 21 <br />
+                        <span class="txt-light-blue">
+                            Washington County
+                        </span>
+                    </div>
+
+                    <div class="slider">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-calendar"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Surgery Subspeci <br /> NOV 21-DEC <br />
+                        <span class="txt-light-blue">
+                            McWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 7-14N 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 7-14N 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 7-14N 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 7-14N 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 7-14N 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 7-14N 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 7-14N 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 7-14N 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 7-14N 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN 7-14N 27 <br />
+                        <span class="txt-light-blue">
+                            Pediatric Clinic No 2
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="single-row">
+                <div class="row-box">Adewolu, Tosin</div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <br /> Elective Pediatric Clinic No2
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Family Medicine <br /> JULA-JUL 20 <br />
+                        <span class="txt-light-blue">
+                            Washington County
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <i class="fa fa-calendar"></i><br>
+                        Psychiatry <br /> AUG 1-AUG <br />
+                        <span class="txt-light-blue">
+                            Washington County
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        General Internal <br /> AUG 29-AUG 23
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Surgery Subapoci <br /> SEP 20-OCT 21 <br />
+                        <span class="txt-light-blue">
+                            McWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <i class="fa fa-medkit"></i>
+                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-moon"></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        Family Medicine <br /> OCT 24-NOV 18 <br />
+                        <span class="txt-light-blue">
+                            Washington County
+                        </span>
+                    </div>
+
+                    <div class="slider">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <br />
+                        Surgery Subspeci <br /> NOV 1-DEC 10 <br />
+                        <span class="txt-light-blue">
+                            McWilliam Hospital
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Altyna Depan
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Altyna Depan
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Altyna Depan
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Altyna Depan
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Altyna Depan
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Altyna Depan
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Altyna Depan
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Altyna Depan
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Altyna Depan
+                        </span>
+                    </div>
+                </div>
+                <div class="row-box">
+                    <div class="inr-div">
+                        <i class='fa fa-moon'></i>
+                        <i class='fas fa-chalkboard-teacher'></i><br />
+                        IM/Cardiology <br /> JAN-JAN 27 <br />
+                        <span class="txt-light-blue">
+                            Altyna Depan
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="next-btn" onclick="nextPage()">
+            <div style="margin-top: 350px;">
+                <i class="fa fa-arrow-right" area-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var isHidden = true;
+        function nextPage() {
+            if (isHidden) {
+
+                var header_list = document.querySelectorAll(".col-header-box");
+                var rows_list = document.querySelectorAll(".single-row");
+                for (let i = 1; i <= 9; i++) {
+                    header_list[i].style.display = "none";
+                }
+                for (let k = 0; k < rows_list.length; k++) {
+                    for (let l = 1; l <= 9; l++) {
+                        rows_list[k].children[l].style.display = "none";
+                    }
+                }
+            } else {
+                var header_list = document.querySelectorAll(".col-header-box");
+                var rows_list = document.querySelectorAll(".single-row");
+                for (let i = 1; i <= 9; i++) {
+                    header_list[i].style.display = "";
+                }
+                for (let k = 0; k < rows_list.length; k++) {
+                    for (let l = 1; l <= 9; l++) {
+                        rows_list[k].children[l].style.display = "";
+                    }
+                }
+            }
+            isHidden = !isHidden;
+            var nextBtnHeight = document.getElementsByClassName('rows')[0].offsetHeight + 50 - 3;
+            document.getElementsByClassName("next-btn")[0].style.height = nextBtnHeight + "px";
+        }
+    </script>
+</body>
+
+</html>
